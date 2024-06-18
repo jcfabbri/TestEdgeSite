@@ -84,8 +84,8 @@
   
   body
     > main
-    > div.section.updates.section-top-container.column-container.cards-container
-    > div.cards-wrapper
+    > div.section.updates.section-top-container.column-container.focused-cards-container
+    > div.focused-cards-wrapper
     > div {
     max-width: 1630px;
     margin: 49px auto 0;
@@ -96,7 +96,7 @@
       border-bottom: 15px solid #c54b2a;
     }
   
-    .cards-card-body {
+    .focused-cards-card-body {
       padding: 36px 0 48px;
       color: #000;
       font: 400 14px "open sans", sans-serif;
@@ -178,8 +178,8 @@
   @media only screen and (width <= 991px) {
     body
       > main
-      > div.section.updates.section-top-container.column-container.cards-container
-      > div.cards-wrapper
+      > div.section.updates.section-top-container.column-container.focused-cards-container
+      > div.focused-cards-wrapper
       > div
       > ul
       li:nth-of-type(1) {
@@ -188,8 +188,8 @@
   
     body
       > main
-      > div.section.updates.section-top-container.column-container.cards-container
-      > div.cards-wrapper
+      > div.section.updates.section-top-container.column-container.focused-cards-container
+      > div.focused-cards-wrapper
       > div
       > ul
       li:nth-of-type(2) {
@@ -217,15 +217,15 @@
   
     body
       > main
-      > div.section.updates.section-top-container.column-container.cards-container.updates-decorated
+      > div.section.updates.section-top-container.column-container.focused-cards-container.updates-decorated
       > div.column-wrapper {
       padding: 0 34px;
     }
   
     body
       > main
-      > div.section.updates.section-top-container.column-container.cards-container.updates-decorated
-      > div.cards-wrapper
+      > div.section.updates.section-top-container.column-container.focused-cards-container.updates-decorated
+      > div.focused-cards-wrapper
       > div {
       justify-content: space-between;
       margin-top: 16px;
@@ -233,8 +233,8 @@
   
     body
       > main
-      > div.section.updates.section-top-container.column-container.cards-container.updates-decorated
-      > div.cards-wrapper
+      > div.section.updates.section-top-container.column-container.focused-cards-container.updates-decorated
+      > div.focused-cards-wrapper
       > div
       > ul {
       display: flex;
@@ -246,8 +246,8 @@
   
     body
       > main
-      > div.section.updates.section-top-container.column-container.cards-container.updates-decorated
-      > div.cards-wrapper
+      > div.section.updates.section-top-container.column-container.focused-cards-container.updates-decorated
+      > div.focused-cards-wrapper
       > div
       > ul
       > li:nth-child(1) {
@@ -259,8 +259,8 @@
   
     body
       > main
-      > div.section.updates.section-top-container.column-container.cards-container.updates-decorated
-      > div.cards-wrapper
+      > div.section.updates.section-top-container.column-container.focused-cards-container.updates-decorated
+      > div.focused-cards-wrapper
       > div
       > ul
       > li:nth-child(2) {
@@ -337,7 +337,7 @@
     body
       > main
       > div.section.updates.section-top-container.column-container.focused-cards-container.updates-decorated
-      > div.cards-wrapper
+      > div.focused-cards-wrapper
       > div
       > ul
       > li
@@ -348,31 +348,31 @@
   
     body
       > main
-      > div.section.updates.section-top-container.column-container.cards-container.updates-decorated
-      > div.cards-wrapper
+      > div.section.updates.section-top-container.column-container.focused-cards-container.updates-decorated
+      > div.focused-cards-wrapper
       > div
       > ul
       > li:nth-child(1)
-      > div.cards-card-body {
+      > div.focused-cards-card-body {
       padding: 10px 0;
     }
   
     body
       > main
-      > div.section.updates.section-top-container.column-container.cards-container.updates-decorated
-      > div.cards-wrapper
+      > div.section.updates.section-top-container.column-container.focused-cards-container.updates-decorated
+      > div.focused-cards-wrapper
       > div
       > ul
       > li:nth-child(2)
-      > div.cards-card-body {
+      > div.focused-cards-card-body {
       padding: 10px 0 35px;
     }
   }
   
   body
     > main
-    > div.section.highlight.section-top-container.columns-container.cards-container
-    > div.cards-wrapper
+    > div.section.highlight.section-top-container.columns-container.focused-cards-container
+    > div.focused-cards-wrapper
     > div
     > ul {
     margin: 3% 1% 5%;
@@ -381,8 +381,8 @@
   
   body
     > main
-    > div.section.highlight.section-top-container.columns-container.cards-container
-    > div.cards-wrapper
+    > div.section.highlight.section-top-container.columns-container.focused-cards-container
+    > div.focused-cards-wrapper
     > div
     > ul
     > li {
@@ -395,7 +395,7 @@
   
   body
     > main
-    > div.section.highlight.section-top-container.columns-container.cards-container.section-bottom-container
+    > div.section.highlight.section-top-container.columns-container.focused-cards-container.section-bottom-container
     > div.section-bottom-wrapper
     > div
     > div
@@ -419,7 +419,7 @@
   
   body
     > main
-    > div.section.highlight.section-top-container.columns-container.cards-container.section-bottom-container
+    > div.section.highlight.section-top-container.columns-container.focused-cards-container.section-bottom-container
     > div.section-bottom-wrapper
     > div
     > div

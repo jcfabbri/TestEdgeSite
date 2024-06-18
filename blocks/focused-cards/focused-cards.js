@@ -14,13 +14,13 @@ function addMobileViewElements() {
   readMoreMobileElement.appendChild(readMoreAnchor);
   cardsBody.appendChild(readMoreMobileElement);
   if (window.innerWidth <= 991) {
-    const cardHeadings = document.querySelectorAll('.updates .cards li');
-    const cardListItem1 = document.querySelector('.updates .cards li:nth-child(1)');
+    const cardHeadings = document.querySelectorAll('.updates .focused-cards li');
+    const cardListItem1 = document.querySelector('.updates .focused-cards li:nth-child(1)');
     cardHeadings[0].insertBefore(
       cardListItem1.children[1].children[0],
       cardHeadings[0].children[0],
     );
-    const cardListItem2 = document.querySelector('.updates .cards li:nth-child(2)');
+    const cardListItem2 = document.querySelector('.updates .focused-cards li:nth-child(2)');
     cardHeadings[1].insertBefore(
       cardListItem2.children[1].children[0],
       cardHeadings[1].children[0],
@@ -28,7 +28,7 @@ function addMobileViewElements() {
   }
 }
 function adjustDescriptionHeight() {
-  const strongTags = document.querySelectorAll('.cards-wrapper strong');
+  const strongTags = document.querySelectorAll('.focused-cards-wrapper strong');
   strongTags.forEach((strongTag, index) => {
     if (index < 3) {
       strongTag.style.height = '70px';
@@ -38,7 +38,7 @@ function adjustDescriptionHeight() {
   });
 }
 function appendArrowImagesToAnchors() {
-  const aTags = document.querySelectorAll('.cards-wrapper .cards-card-body .button-container a');
+  const aTags = document.querySelectorAll('.focused-cards-wrapper .focused-cards-card-body .button-container a');
   aTags.forEach((a) => {
     const { innerText } = a;
     a.innerHTML = '';
@@ -52,14 +52,14 @@ function appendArrowImagesToAnchors() {
 }
 
 function validateAndCorrectCardsText() {
-  const cardBodyElements = document.querySelectorAll('.cards-wrapper .cards-card-body');
-  cardBodyElements.forEach((cardBody) => {
-    if (cardBody.children.length === 2 && cardBody.querySelector('p strong')) {
-      const description = cardBody.querySelector('strong').textContent;
-      cardBody.querySelector('strong').remove();
+  const focusedCardBodyElements = document.querySelectorAll('.focused-cards-wrapper .focused-cards-card-body');
+  focusedCardBodyElements.forEach((focusedCardBody) => {
+    if (focusedCardBody.children.length === 2 && focusedCardBody.querySelector('p strong')) {
+      const description = focusedCardBody.querySelector('strong').textContent;
+      focusedCardBody.querySelector('strong').remove();
       const strongTag = document.createElement('strong');
       strongTag.textContent = description;
-      cardBody.insertBefore(strongTag, cardBody.children[1]);
+      focusedCardBody.insertBefore(strongTag, cardBody.children[1]);
     }
   });
 }
@@ -95,8 +95,8 @@ export default function decorate(block) {
     const li = document.createElement('li');
     while (row.firstElementChild) li.append(row.firstElementChild);
     [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-card-image';
-      else div.className = 'cards-card-body';
+      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'focused-cards-card-image';
+      else div.className = 'focused-cards-card-body';
     });
     ul.append(li);
   });
