@@ -12,7 +12,7 @@ function addMobileViewElements() {
   readMoreAnchor.classList.add('mobile-read-more');
   readMoreAnchor.textContent = 'Read More';
   readMoreMobileElement.appendChild(readMoreAnchor);
-  cardsBody.appendChild(readMoreMobileElement);
+  focusedCardsBody.appendChild(readMoreMobileElement);
   if (window.innerWidth <= 991) {
     const cardHeadings = document.querySelectorAll('.updates .focused-cards li');
     const cardListItem1 = document.querySelector('.updates .focused-cards li:nth-child(1)');
