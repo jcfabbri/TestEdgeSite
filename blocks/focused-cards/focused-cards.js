@@ -59,7 +59,7 @@ function validateAndCorrectCardsText() {
       focusedCardBody.querySelector('strong').remove();
       const strongTag = document.createElement('strong');
       strongTag.textContent = description;
-      focusedCardBody.insertBefore(strongTag, cardBody.children[1]);
+      focusedCardBody.insertBefore(strongTag, focusedCardBody.children[1]);
     }
   });
 }
