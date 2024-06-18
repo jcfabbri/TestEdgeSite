@@ -6,12 +6,6 @@ main .hero-container {
   padding: 0;
 }
 
-.hero {
-  position: relative;
-  padding: 32px;
-  min-height: 300px;
-}
-
 .hero h1 {
   max-width: 1200px;
   margin-left: auto;
