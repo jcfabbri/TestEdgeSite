@@ -43,6 +43,7 @@ header nav[aria-expanded="true"] {
   header nav {
     display: flex;
     justify-content: space-between;
+    max-width: 1650px;
   }
 
   header nav[aria-expanded="true"] {
@@ -340,7 +341,7 @@ header nav {
 
 header .menuUL {
   position: fixed;
-  right: 110px;
+  right: calc(50% - 734px);
   top: 100%;
   margin: 0;
   z-index: 210;
