@@ -2,7 +2,7 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
 
 function addMobileViewElements() {
   const focusedCardsBody = document.querySelector('.updates .focused-cards');
-  if (!cardsBody) {
+  if (!focusedCardsBody) {
     return;
   }
   const readMoreMobileElement = document.createElement('div');
