@@ -199,7 +199,7 @@ main img {
 .hero {
   position: relative;
   padding: 32px;
-  min-height: 300px;
+  min-height: 400px;
 }
 
 main .hero-text {
