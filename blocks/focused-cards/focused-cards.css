@@ -25,11 +25,23 @@
         margin-top: 0;
       }
     }
+
+    .focused-cards-card-body:hover {
+      transform: scale(1.05);
+    }
   
     .focused-cards-card-image {
       line-height: 0;
     }
+
+      .focused-cards-card-image:hover {
+        color: #000;
+        text-decoration: none;
+        transform: scale(1.05);
+    }
   } 
+
+
   
     &.events {
       img {
