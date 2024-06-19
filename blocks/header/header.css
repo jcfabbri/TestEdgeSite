@@ -43,6 +43,9 @@ header nav[aria-expanded="true"] {
   header nav {
     display: flex;
     justify-content: space-between;
+    max-width: 1650px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   header nav[aria-expanded="true"] {
@@ -67,6 +70,8 @@ header nav .nav-hamburger {
   height: 22px;
   display: flex;
   align-items: center;
+  position: absolute;
+  right: 30px;
 }
 
 header nav .nav-hamburger button {
@@ -286,7 +291,7 @@ header nav .nav-tools {
 .section-logos > div {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 
   /* padding: 1rem; */
 }
@@ -309,7 +314,7 @@ header .nav-wrapper {
 }
 
 header .nav-search {
-  display: inline-flex;
+  display: none;
   align-items: center;
   cursor: pointer;
   color: white;
@@ -322,11 +327,17 @@ header .nav-search-icon {
 }
 
 header .nav-language {
-  display: inline-flex;
+  display: none;
   align-items: center;
   cursor: pointer;
   color: white;
   font: 400 18px 'open sans',sans-serif;
+}
+
+@media ( width >= 900px ) {
+  header .nav-language, header .nav-search {
+    display: inline-flex;
+  }
 }
 
 header .nav-language-icon {
@@ -340,7 +351,7 @@ header nav {
 
 header .menuUL {
   position: fixed;
-  right: 110px;
+  right: calc(50% - 734px);
   top: 100%;
   margin: 0;
   z-index: 210;
