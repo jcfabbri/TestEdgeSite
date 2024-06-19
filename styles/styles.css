@@ -485,3 +485,14 @@ body > div.uwy.userway_p1.utb > div {
     }
   }
 }
+
+@media ( width < 1650 ) {
+  #breadcrumb {
+    max-width: 100%;
+    padding-left: 30px;
+
+    ul {
+      font-size: 14px;
+    }
+  }
+}
