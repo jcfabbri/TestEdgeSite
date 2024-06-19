@@ -11,7 +11,7 @@ main .hero-container {
     > div:last-of-type {
       width: 100%;
       text-align: center;
-      bottom: 101px;
+      bottom: 10px;
       position: absolute;
       left: 0;
     }
@@ -22,10 +22,10 @@ main .hero-container {
     font-weight: 700;
     font-size: 44px;
     text-shadow: 0px 2px 0.99px rgba(0,0,0,0.9);
-    max-width: 1650px;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
+    padding-left: 40px;
 }
 
 picture {
@@ -41,4 +41,29 @@ picture {
     filter: brightness(0.85);
   }
 }
+}
+
+@media ( width >= 1650px){
+  .hero {
+    >div {
+      >div:last-of-type {
+        h1 {
+          max-width: 1650px;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (width >= 900px) {
+  .hero {
+    >div {
+      > div:last-of-type {
+        bottom: 101px;
+        left: 0;
+      }
+    }
+  }
+  
 }
