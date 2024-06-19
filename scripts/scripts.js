@@ -46,8 +46,8 @@ function buildBreadcrumb(main) {
   const meta = document.querySelector('meta[name=breadcrumb]').content;
   const breadcrumbList = meta.replace(' ', '').split('/');
   let linkUrl = '/';
-  breadcrumbList.forEach(function (value, i) {
-    linkUrl = linkUrl + paths[i] + '/';
+  breadcrumbList.forEach((value, i) => {
+    linkUrl = `${linkUrl}${paths[i]}/`;
     const item = document.createElement('li');
     const link = document.createElement('a');
     link.innerText = value;
@@ -57,9 +57,8 @@ function buildBreadcrumb(main) {
   });
   if (paths > breadcrumbList) {
     const lastItem = paths.slice(-1).toString();
-    console.log(lastItem);
-    if ( lastItem.startsWith('?')){
-      //don't write out cache
+    if (lastItem.startsWith('?')) {
+      // don't write out cache
     } else {
       const lastLi = document.createElement('li');
       const title = document.querySelector('.hero').innerText;
