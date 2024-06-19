@@ -30,6 +30,47 @@ function buildHeroBlock(main) {
   }
 }
 
+function buildBreadcrumb(main) {
+  const url = window.location.href;
+  const paths = url.split('/').splice(3);
+  const breadcrumb = document.createElement('nav');
+  breadcrumb.id = 'breadcrumb';
+  breadcrumb.setAttribute('aria-label', 'breadcrumbs');
+  const list = document.createElement('ul');
+  const home = document.createElement('li');
+  const homeLink = document.createElement('a');
+  homeLink.href = '/';
+  homeLink.innerText = 'Home';
+  home.append(homeLink);
+  list.append(home);
+  const meta = document.querySelector('meta[name=breadcrumb]').content;
+  const breadcrumbList = meta.replace(' ', '').split('/');
+  let linkUrl = '/';
+  breadcrumbList.forEach(function (value, i) {
+    linkUrl = linkUrl + paths[i] + '/';
+    const item = document.createElement('li');
+    const link = document.createElement('a');
+    link.innerText = value;
+    link.href = linkUrl;
+    item.append(link);
+    list.append(item);
+  });
+  if (paths > breadcrumbList) {
+    const lastItem = paths.slice(-1).toString();
+    console.log(lastItem);
+    if ( lastItem.startsWith('?')){
+      //don't write out cache
+    } else {
+      const lastLi = document.createElement('li');
+      const title = document.querySelector('.hero').innerText;
+      lastLi.innerText = title;
+      list.append(lastLi);
+    }
+  }
+  breadcrumb.append(list);
+  main.prepend(breadcrumb);
+}
+
 /**
  * load fonts.css and set a session storage flag
  */
@@ -49,6 +90,7 @@ async function loadFonts() {
 function buildAutoBlocks(main) {
   try {
     buildHeroBlock(main);
+    buildBreadcrumb(main);
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);
