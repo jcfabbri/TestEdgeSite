@@ -432,3 +432,67 @@ body > div.uwy.userway_p1.utb > div {
 #userwayAccessibilityIcon {
   background: rgb(0, 148, 195) !important;
 }
+
+#breadcrumb {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 130px;
+  z-index: 51;
+  width: 100%;
+  max-width: 1650px;
+  margin-left: auto;
+  margin-right: auto;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font: normal 17px 'Neue Montreal',sans-serif;
+    color: #fff;
+    line-height: 1;
+
+    li {
+      display: inline-block;
+      margin: 0;
+      position: relative;
+      margin-right: 23px;
+    }
+
+    li:not(:last-of-type)::after {
+      content: '';
+      width: 4px;
+      height: 8px;
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAICAYAAADeM14FAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAxSURBVHgBXYzBCQAgEMOqE7maE1w3r4gg0bxKIVGSEsmh/uOebS8Is+tlUDEbZtR0FviBMXRiG1KHAAAAAElFTkSuQmCC") center/4px 8px no-repeat;
+      position: absolute;
+      top: 4px;
+      right: -15px;
+    }
+  }
+
+  a {
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+  }
+
+  ul li:first-of-type {
+    color: #FFC7B8;
+
+    a {
+      color: #FFC7B8;
+    }
+  }
+}
+
+@media ( width < 1650 ) {
+  #breadcrumb {
+    max-width: 100%;
+    padding-left: 30px;
+
+    ul {
+      font-size: 14px;
+    }
+  }
+}
