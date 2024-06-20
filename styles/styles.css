@@ -445,4 +445,11 @@ body > div.uwy.userway_p1.utb > div {
     line-height: 2.5;
 }
 
+#parks--trails {
+  font: 700 24px 'Oswald', sans-serif;
+  text-transform: uppercase;
+  padding: 75px 10px 11px 0;
+  margin-bottom: 8px;
+}
+
 
