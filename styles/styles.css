@@ -407,15 +407,10 @@ body > main > div.section.newsletter > div h2 {
 }
 
 body > main > div:nth-child(1) > div > picture > img {
-  opacity: 0.75;
   transform-origin: bottom center;
   transform: scale(1.18);
   width: 100%;
-}
-
-body > main > div:nth-child(1) > div {
-  background-color: black;
-  overflow: hidden;
+  filter: brightness(0.65);
 }
 
 body > main .uwaw {
@@ -495,4 +490,24 @@ body > div.uwy.userway_p1.utb > div {
       font-size: 14px;
     }
   }
+}
+
+.default-content-wrapper {
+  p, h1, h2, h3, h4, h5, h6 {
+      max-width: 1650px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+@media ( width < 1650px ) {
+  .default-content-wrapper {
+  p, h1, h2, h3, h4, h5, h6 {
+      max-width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
 }
