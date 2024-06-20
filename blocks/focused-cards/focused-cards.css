@@ -21,6 +21,7 @@
     .focused-cards-card-body {
       margin: 16px;
       text-align: center;
+      max-height: 260px;
       
       > *:first-child {
         margin-top: 0;
