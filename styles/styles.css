@@ -439,10 +439,11 @@ body > div.uwy.userway_p1.utb > div {
     color: white;
     float: left;
     width: 240px;
-    padding-top: 86px;
+    padding-top: 16px;
     padding-left: 20px;
     font: 700 16px 'Open Sans', sans-serif;
     line-height: 2.5;
+    min-height: 100vh;
 }
 
 #parks--trails {
