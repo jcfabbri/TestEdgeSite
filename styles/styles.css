@@ -446,7 +446,7 @@ body > div.uwy.userway_p1.utb > div {
     min-height: 100vh;
 }
 
-.parks-trails-left.default-contentwrapper.ul.li {
+.parks-trails-left .default-contentwrapper .ul .li {
   list-style: none;
 }
 
