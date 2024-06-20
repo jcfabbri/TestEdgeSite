@@ -117,10 +117,12 @@
     }
 
       /* This should not be in here! -jfabbri */
-    .parks-trails-left {
+    .parks-trails-wrapper {
         float: left;
         width: 240px;
     }
+
+
   
     .focused-cards-card-body {
       padding: 36px 0 48px;
