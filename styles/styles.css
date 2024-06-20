@@ -432,3 +432,11 @@ body > div.uwy.userway_p1.utb > div {
 #userwayAccessibilityIcon {
   background: rgb(0, 148, 195) !important;
 }
+
+
+.parks-trails-left {
+    float: left;
+    width: 240px;
+}
+
+
