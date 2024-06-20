@@ -117,7 +117,7 @@
     }
 
       /* This should not be in here! -jfabbri */
-    .parks-trails-wrapper {
+    .section .parks-trails-left {
         float: left;
         width: 240px;
     }
