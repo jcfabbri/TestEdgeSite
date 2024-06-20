@@ -491,3 +491,23 @@ body > div.uwy.userway_p1.utb > div {
     }
   }
 }
+
+.default-content-wrapper {
+  p, h1, h2, h3, h4, h5, h6 {
+      max-width: 1650px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+@media ( width < 1650px ) {
+  .default-content-wrapper {
+  p, h1, h2, h3, h4, h5, h6 {
+      max-width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+}
