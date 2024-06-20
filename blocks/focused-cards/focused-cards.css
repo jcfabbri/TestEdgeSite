@@ -32,6 +32,7 @@
   
     .focused-cards-card-image {
       line-height: 0;
+      text-align: center;
     }
 
       .focused-cards-card-image:hover {
