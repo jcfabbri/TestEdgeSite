@@ -446,6 +446,10 @@ body > div.uwy.userway_p1.utb > div {
     min-height: 100vh;
 }
 
+.parks-trails-left.default-contentwrapper.ul.li {
+  list-style: none;
+}
+
 #parks--trails {
   font: 700 24px 'Oswald', sans-serif;
   text-transform: uppercase;
