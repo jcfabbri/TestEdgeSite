@@ -435,10 +435,12 @@ body > div.uwy.userway_p1.utb > div {
 
 
 .parks-trails-left {
-    background-color: #B54425;
+    background-color: #C54B2A;
     color: white;
     float: left;
     width: 240px;
+    padding-top: 40px;
+    padding-left: 20px;
 }
 
 
