@@ -15,6 +15,7 @@
           aspect-ratio: 4 / 3;
           object-fit: cover;
           max-height: 260px;
+          padding: 16px;
         }
       }
     }
