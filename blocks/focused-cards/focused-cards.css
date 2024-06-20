@@ -20,6 +20,7 @@
   
     .focused-cards-card-body {
       margin: 16px;
+      text-align: center;
       
       > *:first-child {
         margin-top: 0;
