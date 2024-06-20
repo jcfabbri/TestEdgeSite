@@ -445,8 +445,8 @@ body > div.uwy.userway_p1.utb > div {
     line-height: 2.5;
     min-height: 100vh;
     list-style-type: none;
-    flex: 0 0 22%;
-    max-width: 400px;
+    
+    width: 340px;
 }
 
 .parks-trails-left .default-content-wrapper > ul {
