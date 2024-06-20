@@ -444,6 +444,7 @@ body > div.uwy.userway_p1.utb > div {
     font: 700 16px 'Open Sans', sans-serif;
     line-height: 2.5;
     min-height: 100vh;
+    list-style-type: none;
 }
 
 .parks-trails-left .default-contentwrapper .ul .li {
