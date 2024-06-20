@@ -407,15 +407,10 @@ body > main > div.section.newsletter > div h2 {
 }
 
 body > main > div:nth-child(1) > div > picture > img {
-  opacity: 0.75;
   transform-origin: bottom center;
   transform: scale(1.18);
   width: 100%;
-}
-
-body > main > div:nth-child(1) > div {
-  background-color: black;
-  overflow: hidden;
+  filter: brightness(0.65);
 }
 
 body > main .uwaw {
