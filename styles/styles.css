@@ -447,7 +447,7 @@ body > div.uwy.userway_p1.utb > div {
     list-style-type: none;
 }
 
-.parks-trails-left > ul {
+.parks-trails-left.default-content-wrapper > ul {
   list-style: none;
 }
 
