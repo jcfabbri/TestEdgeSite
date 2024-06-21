@@ -25,17 +25,17 @@
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 18px;
-  --body-font-size-xs: 16px;
+  --body-font-size-m: 18px;
+  --body-font-size-s: 16px;
+  --body-font-size-xs: 14px;
 
   /* heading sizes */
-  --heading-font-size-xxl: 48px;
-  --heading-font-size-xl: 40px;
-  --heading-font-size-l: 32px;
-  --heading-font-size-m: 24px;
-  --heading-font-size-s: 20px;
-  --heading-font-size-xs: 18px;
+  --heading-font-size-xxl: 40px;
+  --heading-font-size-xl: 32px;
+  --heading-font-size-l: 24px;
+  --heading-font-size-m: 20px;
+  --heading-font-size-s: 18px;
+  --heading-font-size-xs: 16px;
 
   /* nav height */
   --nav-height: 104px;
@@ -50,12 +50,12 @@
 
 @media (width >= 900px) {
   :root {
-    --heading-font-size-xxl: 60px;
-    --heading-font-size-xl: 48px;
-    --heading-font-size-l: 36px;
-    --heading-font-size-m: 30px;
-    --heading-font-size-s: 24px;
-    --heading-font-size-xs: 22px;
+    --heading-font-size-xxl: 40px;
+    --heading-font-size-xl: 32px;
+    --heading-font-size-l: 24px;
+    --heading-font-size-m: 20px;
+    --heading-font-size-s: 18px;
+    --heading-font-size-xs: 16px;
   }
 }
 
@@ -80,6 +80,7 @@ header {
   position: fixed;
   left: 0;
   right: 0;
+  top: 0;
   z-index: 999;
   border-bottom: 1px solid #fff;
   transition: all .3s;
@@ -407,15 +408,10 @@ body > main > div.section.newsletter > div h2 {
 }
 
 body > main > div:nth-child(1) > div > picture > img {
-  opacity: 0.75;
   transform-origin: bottom center;
   transform: scale(1.18);
   width: 100%;
-}
-
-body > main > div:nth-child(1) > div {
-  background-color: black;
-  overflow: hidden;
+  filter: brightness(0.65);
 }
 
 body > main .uwaw {
@@ -432,6 +428,41 @@ body > div.uwy.userway_p1.utb > div {
 #userwayAccessibilityIcon {
   background: rgb(0, 148, 195) !important;
 }
+
+.parks-trails-left {
+    background-color: #C54B2A;
+    color: white;
+    float: left;
+    width: 240px;
+    padding-top: 16px;
+    padding-left: 20px;
+    font: 700 16px 'Open Sans', sans-serif;
+    line-height: 2.5;
+    min-height: 100vh;
+    list-style-type: none;
+    
+    width: 340px;
+}
+
+.parks-trails-left .default-content-wrapper > ul {
+  list-style-type: none;
+}
+
+.parks-trails-left .default-content-wrapper > ul > li > a {
+  color: #fff;
+}
+
+.parks-trails-left .default-content-wrapper > ul > li > a:hover {
+  color: #B54324;
+}
+
+#parks--trails {
+  font: 700 24px 'Oswald', sans-serif;
+  text-transform: uppercase;
+  padding: 75px 10px 11px 0;
+  margin-bottom: 8px;
+}
+
 
 #breadcrumb {
   position: absolute;
@@ -494,5 +525,41 @@ body > div.uwy.userway_p1.utb > div {
     ul {
       font-size: 14px;
     }
+  }
+}
+
+.default-content-wrapper {
+  p, h1, h2, h3, h4, h5, h6, ul {
+      max-width: 1650px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+@media ( width < 1650px ) {
+  .default-content-wrapper {
+  p, h1, h2, h3, h4, h5, h6 {
+      max-width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  ul {
+    max-width: 100%;
+    margin-left: 30px;
+  }
+}
+}
+
+.form-wrapper {
+  max-width: 1650px;
+}
+
+@media (width < 1660px ) {
+  .form-wrapper {
+      margin-left: 30px;
+      margin-right: 30px;
   }
 }
