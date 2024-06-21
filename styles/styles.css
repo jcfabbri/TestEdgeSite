@@ -429,6 +429,41 @@ body > div.uwy.userway_p1.utb > div {
   background: rgb(0, 148, 195) !important;
 }
 
+.parks-trails-left {
+    background-color: #C54B2A;
+    color: white;
+    float: left;
+    width: 240px;
+    padding-top: 16px;
+    padding-left: 20px;
+    font: 700 16px 'Open Sans', sans-serif;
+    line-height: 2.5;
+    min-height: 100vh;
+    list-style-type: none;
+    
+    width: 340px;
+}
+
+.parks-trails-left .default-content-wrapper > ul {
+  list-style-type: none;
+}
+
+.parks-trails-left .default-content-wrapper > ul > li > a {
+  color: #fff;
+}
+
+.parks-trails-left .default-content-wrapper > ul > li > a:hover {
+  color: #B54324;
+}
+
+#parks--trails {
+  font: 700 24px 'Oswald', sans-serif;
+  text-transform: uppercase;
+  padding: 75px 10px 11px 0;
+  margin-bottom: 8px;
+}
+
+
 #breadcrumb {
   position: absolute;
   left: 0;
