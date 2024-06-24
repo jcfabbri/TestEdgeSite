@@ -6,6 +6,8 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 20px;
+
+
     
       > li {
         background-color: var(--background-color);
@@ -25,6 +27,7 @@
       margin: 16px;
       text-align: center;
       max-height: 260px;
+
       
       > *:first-child {
         margin-top: 0;
@@ -48,6 +51,22 @@
         transform: scale(1.05);
     }
   } 
+
+  @media (width < 1500px ) {
+    .focused-cards {
+      >ul {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+
+  @media (width < 700px ) {
+    .focused-cards {
+      >ul {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
 
 
   
