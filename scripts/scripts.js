@@ -63,14 +63,12 @@ function buildBreadcrumb(main) {
       const lastLi = document.createElement('li');
       const title = document.querySelector('.hero').innerText;
       const lastBc = breadcrumbList.slice(-1).toString().trim();
-      console.log('lastBC = "' + lastBc + '" and title = "' + title +'"');
-      if ( lastBc === title ) {
-        //don't write a new one if it is the same as the page you are on
+      if (lastBc === title) {
+        // don't write a new one if it is the same as the page you are on
       } else {
         lastLi.innerText = title;
         list.append(lastLi);
       }
-      
     }
   }
   breadcrumb.append(list);
