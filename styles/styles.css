@@ -517,7 +517,7 @@ body > div.uwy.userway_p1.utb > div {
   }
 }
 
-@media ( width < 1650 ) {
+@media ( width < 1650px ) {
   #breadcrumb {
     max-width: 100%;
     padding-left: 30px;
