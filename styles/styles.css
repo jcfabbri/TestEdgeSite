@@ -588,3 +588,29 @@ body.twocol main {
   }
 
 }
+
+@media (width < 1000px) {
+  body.twocol main {
+    flex-direction: column;
+    div.parks-trails-left {
+      width: 70%;
+      margin: 20px auto;
+      padding: 0 20px;
+      height: auto;
+      min-height: 0;
+      h5 { display: none;}
+       ul { display: none;}
+
+       &::before {
+        content: 'Sub Menu';
+        font-size: 23px;
+        text-transform: uppercase;
+       }
+    }
+
+    div.parks-trails-right {
+      width: 90%;
+      margin: auto;
+    }
+  }
+}
