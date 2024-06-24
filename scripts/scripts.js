@@ -62,8 +62,13 @@ function buildBreadcrumb(main) {
     } else {
       const lastLi = document.createElement('li');
       const title = document.querySelector('.hero').innerText;
-      lastLi.innerText = title;
-      list.append(lastLi);
+      const lastBc = breadcrumbList.slice(-1).toString().trim();
+      if (lastBc === title) {
+        // don't write a new one if it is the same as the page you are on
+      } else {
+        lastLi.innerText = title;
+        list.append(lastLi);
+      }
     }
   }
   breadcrumb.append(list);
