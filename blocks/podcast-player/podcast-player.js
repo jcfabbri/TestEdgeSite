@@ -1,8 +1,10 @@
 /**
  * Parse ID3v2 tags from MP3 file to extract title and artist
+ * Bitwise operations are necessary for parsing binary ID3 tag data
  * @param {string} url - URL of the MP3 file
  * @returns {Promise<{title: string|null, artist: string|null}>}
  */
+/* eslint-disable no-bitwise */
 async function parseID3Tags(url) {
   try {
     // Fetch the first 10KB of the file (enough for ID3v2 header and common tags)
@@ -119,6 +121,7 @@ async function parseID3Tags(url) {
     return { title: null, artist: null };
   }
 }
+/* eslint-enable no-bitwise */
 
 export default function decorate(block) {
   // Extract the MP3 URL from the block content
@@ -345,4 +348,3 @@ export default function decorate(block) {
     updateProgress();
   });
 }
-
