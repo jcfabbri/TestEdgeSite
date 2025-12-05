@@ -13,9 +13,6 @@
   padding: 20px 24px;
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   border-radius: 16px;
-  box-shadow: 
-    0 10px 40px rgba(0, 0, 0, 0.3),
-    0 0 0 1px rgba(255, 255, 255, 0.05) inset;
   max-width: 600px;
 }
 
