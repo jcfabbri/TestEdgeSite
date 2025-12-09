@@ -1,0 +1,29 @@
+{
+  "blockName": [
+    {
+      "mimeType": "audio/*",
+      "value": "Podcast Player"
+    },
+    {
+      "mimeType": "audio/mpeg",
+      "value": "Podcast Player"
+    },
+    {
+      "mimeType": "audio/mp3",
+      "value": "Podcast Player"
+    }
+  ],
+  "copyMode": [
+    {
+      "mimeType": "audio/*",
+      "value": "link"
+    }
+  ],
+  "blockTemplate": [
+    {
+      "mimeType": "audio/*",
+      "value": "<table border='1' style=\"width:100%\">\n  <tr>\n    <td style=\"background-color:#2986cc;color:#fff\">${blockName}</td>\n  </tr>\n  <tr>\n    <td>\n      <a href=\"${assetUrl}\">${name}</a>\n    </td>\n  </tr>\n</table>"
+    }
+  ]
+}
+
