@@ -6,7 +6,7 @@
       "title": "Assets",
       "environments": ["edit"],
       "url": "https://experience.adobe.com/solutions/CQ-helix-assets-addon/static-assets/resources/asset-selector.html?rail=false",
-      "isPalette": false,
+      "isPalette": true,
       "includePaths": ["**.docx**"],
       "passConfig": true
     }
