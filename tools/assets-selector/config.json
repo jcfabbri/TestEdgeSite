@@ -25,25 +25,18 @@
       "value": "<table border='1' style=\"width:100%\">\n  <tr>\n    <td style=\"background-color:#2986cc;color:#fff\">${blockName}</td>\n  </tr>\n  <tr>\n    <td>\n      <a href=\"${assetUrl}\">${name}</a>\n    </td>\n  </tr>\n</table>"
     }
   ],
-  "filterSchema": {
-    "fields": [
-      {
-        "element": "checkbox",
-        "name": "type",
-        "options": [
-          { "label": "JPG", "value": "image/jpeg" },
-          { "label": "PNG", "value": "image/png" },
-          { "label": "TIFF", "value": "image/tiff" },
-          { "label": "GIF", "value": "image/gif" },
-          { "label": "MP4", "value": "video/mp4" },
-          { "label": "MP3", "value": "audio/mpeg" },
-          { "label": "WAV", "value": "audio/wav" }
-       ],
-        "columns": 3
-      }
-    ],
-    "header": "Mime Types",
-    "groupKey": "MimeTypeGroup"
-  }
+  "filterSchema": [
+        {
+            "header": "Assets Tags",
+            "groupKey": "AssetTagsGroup",
+            "fields": [
+                {
+                    "element": "taggroup",
+                    "name": "property=metadata.application.xcm:keywords.id",
+                    "columns": 3
+                }
+            ]
+        }
+    ]
 }
 
