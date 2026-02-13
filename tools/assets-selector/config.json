@@ -26,17 +26,26 @@
     }
   ],
   "filterSchema": [
+    {
+      "header": "Mime Types",
+      "groupKey": "MimeTypeGroup",
+      "fields": [
         {
-            "header": "Assets Tags",
-            "groupKey": "AssetTagsGroup",
-            "fields": [
-                {
-                    "element": "taggroup",
-                    "name": "property=metadata.application.xcm:keywords.id",
-                    "columns": 3
-                }
-            ]
+          "element": "checkbox",
+          "name": "type",
+          "options": [
+            { "label": "JPG", "value": "image/jpeg" },
+            { "label": "PNG", "value": "image/png" },
+            { "label": "TIFF", "value": "image/tiff" },
+            { "label": "GIF", "value": "image/gif" },
+            { "label": "MP4", "value": "video/mp4" },
+            { "label": "MP3", "value": "audio/mpeg" },
+            { "label": "WAV", "value": "audio/wav" }
+          ],
+          "columns": 3
         }
-    ]
+      ]
+    }
+  ]
 }
 
